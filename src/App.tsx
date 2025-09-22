@@ -1,15 +1,17 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router'
+import Home from './pages/Home'
+import New from './pages/New'
+import Diary from './pages/Diary'
+import NotFound from './pages/NotFound'
 
 function App() {
-  const [placeholder] = useState<string | null>(null)
-
   return (
-    <div style={{ padding: 24 }}>
-      <h1>Emotion Diary</h1>
-      <p>Welcome! Start building your app here.</p>
-      {placeholder && <pre>{placeholder}</pre>}
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/new" element={<New />} />
+        <Route path="/diary" element={<Diary />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
   )
 }
-
 export default App
