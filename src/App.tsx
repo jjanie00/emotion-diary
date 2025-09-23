@@ -1,4 +1,5 @@
 import { Routes, Route, Link, useNavigate } from 'react-router'
+import './App.css'
 import Home from './pages/Home'
 import New from './pages/New'
 import Diary from './pages/Diary'
@@ -9,7 +10,7 @@ function App() {
 
   const handleButtonClick = () => {
     nav('/new'); 
-  }
+}
 
   return (
     <>
