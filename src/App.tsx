@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useNavigate } from 'react-router'
-import './App.css'
+import '../index.css'
 import Home from './pages/Home'
 import New from './pages/New'
 import Diary from './pages/Diary'

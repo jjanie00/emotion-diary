@@ -13,7 +13,6 @@ export default function Home() {
       <img src={getEmotionImages(3)}/>
       <img src={getEmotionImages(4)}/>
       <img src={getEmotionImages(5)}/>
-      <img src={getEmotionImages(6)}/>
     </div>
     </>
   )
