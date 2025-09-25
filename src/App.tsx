@@ -1,25 +1,16 @@
-import { Routes, Route, Link, useNavigate } from 'react-router'
+import { Routes, Route } from 'react-router'
 import '../index.css'
 import Home from './pages/Home'
 import New from './pages/New'
 import Diary from './pages/Diary'
 import NotFound from './pages/NotFound'
+import Header from './components/Header'
 
 function App() {
-  const nav = useNavigate(); 
-
-  const handleButtonClick = () => {
-    nav('/new'); 
-}
 
   return (
     <>
-    <div>
-      <Link to="/">Home</Link>
-      <Link to="/new">New</Link>
-      <Link to="/diary">Diary</Link>
-      <button onClick={handleButtonClick}>버튼</button>
-    </div>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/new" element={<New />} />
